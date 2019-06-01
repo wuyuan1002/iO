@@ -31,7 +31,7 @@ import java.io.IOException;
  * @version 1.2
  * @date 2019/3/16 18:18
  */
-public class copyfoldersCode {
+public class CopyfoldersCode {
     public static void main(String[] args) throws IOException {
         /*
          *     封装数据源
