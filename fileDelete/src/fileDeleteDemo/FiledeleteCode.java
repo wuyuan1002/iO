@@ -12,7 +12,7 @@ import java.io.File;
  * @version 1.0
  * @date 2019/3/17 9:06
  */
-public class filedeleteCode {
+public class FiledeleteCode {
     public static void main(String[] args) {
         /*
          * 封装数据地址

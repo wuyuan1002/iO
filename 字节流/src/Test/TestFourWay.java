@@ -20,9 +20,9 @@ import java.io.IOException;
  * @version 1.0
  * @date 2019/3/20 10:32
  */
-public class testFourWay {
+public class TestFourWay {
     public static void main(String[] args) throws IOException {
-        // TODO Auto-generated method stub
+
         long start = System.currentTimeMillis();
         method1("a.txt","copy1.txt");
 //		method2("a.txt","copy2.txt");
@@ -32,9 +32,11 @@ public class testFourWay {
         System.out.println("该方法耗时："+ (end - start) + "毫秒");
     }
 
-    //基本字节流一次读写一个字节
+    /**
+     * 基本字节流一次读写一个字节
+     */
     private static void method1(String srcString,String destString) throws IOException {
-        // TODO Auto-generated method stub
+
         FileInputStream fis = new FileInputStream(srcString);
         FileOutputStream fos = new FileOutputStream(destString);
 
@@ -46,9 +48,11 @@ public class testFourWay {
         fos.close();
     }
 
-    //基本字节流一次读写一个字节数组
+    /**
+     * 基本字节流一次读写一个字节数组
+     */
     private static void method2(String srcString,String destString) throws IOException {
-        // TODO Auto-generated method stub
+
         FileInputStream fis = new FileInputStream(srcString);
         FileOutputStream fos = new FileOutputStream(destString);
 
@@ -61,9 +65,11 @@ public class testFourWay {
         fos.close();
     }
 
-    //字节缓冲流一次读写一个字节
+    /**
+     * 字节缓冲流一次读写一个字节
+     */
     private static void method3(String srcString,String destString) throws IOException {
-        // TODO Auto-generated method stub
+
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream(srcString));
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destString));
 
@@ -76,9 +82,11 @@ public class testFourWay {
         bos.close();
     }
 
-    //字节缓冲流一次读写一个字节数组
+    /**
+     * 字节缓冲流一次读写一个字节数组
+     */
     private static void method4(String srcString,String destString) throws IOException {
-        // TODO Auto-generated method stub
+
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream(srcString));
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destString));
 
